@@ -1,0 +1,36 @@
+.column:hover {
+	border: 1px solid #777;
+}
+
+.column img {
+	width: 100%;
+	height: auto;
+}
+
+.desc {
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+@media screen and (max-width: 1000px) {
+	.column {
+		width: 100%;
+		text-align: center;
+	}
+	img {
+		margin: auto;
+	}
+	

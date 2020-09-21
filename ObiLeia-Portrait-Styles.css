@@ -1,0 +1,41 @@
+.container {
+	padding: 64px;
+}
+
+.column-66 {
+	float: left;
+	width: 66.66666666%;
+	padding: 20px;
+}
+
+.column-33 {
+	float: left;
+	width: 33.3333%;
+	padding: 20px;
+}
+
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}	
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 5px solid black;
+	display: block;
+}
+
+@media screen and (max-width: 1000px) {
+	.column-66, .column-33 {
+		width: 100%;
+		text-align: left;
+	}
+	.container {
+		padding: 2px;
+		padding-bottom: 61px;
+	}
+	img {
+		margin: auto;
+	}
